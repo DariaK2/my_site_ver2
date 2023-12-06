@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="static/styles/normalize.min.css" />
+    <link rel="stylesheet" href="static/styles/style.css" />
+</head>
+
+<body>
+    <header class="header" id="myHeader">
+        <a href="index.html" class="header__logo"><img src="static/images/bat-logo.png" width="115px"
+                height="69px" /></a>
+        <input type="checkbox" id="menu-checkbox" />
+        <nav role="navigation">
+            <label for="menu-checkbox" class="toggle-button" data-open="Меню" data-close="Закрыть" onclick></label>
+            <ul class="main-menu">
+                <li class="header__item active">
+                    <a class="header__link" href="index.html">Главная</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="about_shop.html">О магазине</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="pay_and_delivery.html">Оплата и доставка</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="main">
+                <div class="main__image_1" align="left"></div>
+                <div id="about_site" class="main__text">
+                    <h1 class="main__title" align="center">Лавка алхимии</h1>
+                    <div class="main__desc">
+                        <p class="main__p" align="center">
+                            Место, где можно найти все необходимое для изучения и практики
+                            чародейства
+                        </p>
+
+                        <div align="center">
+                            <img src="static/images/store-1.jpg" width="100%" alt="витрина" />
+                        </div>
+
+                        <p class="main__p" align="center">Внутри лавки царит атмосфера таинственности и загадочности.
+                        </p>
+
+                        <p class="main__p" align="center">Полки заполнены
+                            различными сосудами, банками и
+                            бутылками, на которых указаны названия и свойства каждого продукта.</p>
+                    </div>
+                </div>
+                <div class="main__image_2" align="right"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="example-3">
+        <div class="container main-content-area">
+            <div class="holder" align="center">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#about_site">О сайте</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="holder" align="center">
+                <h3>Ассортимент</h3>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about_shop.html">О магазине</a></li>
+                </ul>
+            </div>
+            <div class="holder" align="center">
+                <h3>Условия обсуживания</h3>
+                <ul>
+                    <li><a href="pay_and_delivery.html">Оплата и доставка</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright" align="center">
+            <p>Авторские права © 2023 Дарья Коваленко</p>
+        </div>
+    </footer>
+</body>
+
+</html>

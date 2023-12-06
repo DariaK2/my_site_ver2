@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="static/styles/normalize.min.css" />
+  <link rel="stylesheet" href="static/styles/style.css" />
+</head>
+
+<body>
+  <header class="header" id="myHeader">
+    <a href="index.html" class="header__logo"><img src="static/images/bat-logo.png" width="115px" height="69px" /></a>
+    <input type="checkbox" id="menu-checkbox" />
+    <nav role="navigation">
+      <label for="menu-checkbox" class="toggle-button" data-open="Меню" data-close="Закрыть" onclick></label>
+      <ul class="main-menu">
+        <li class="header__item">
+          <a class="header__link" href="index.html">Главная</a>
+        </li>
+        <li class="header__item active">
+          <a class="header__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="about_shop.html">О магазине</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="pay_and_delivery.html">Оплата и доставка</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="catalog__container" id="catlog-list">
+    <div class="card">
+      <img class="card__image" src="static/images/mermaid-tears.png" width="100%" alt="mermaid-tears" />
+      <a href="#" class="card__title">Слезы русалки</a>
+      <p class="price">10 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/unicorn-horn.jpg" width="100%" alt="unicorn-horn" />
+      <a href="#" class="card__title">Рог единорога</a>
+      <p class="price">15 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/magic-frog.png" width="100%" alt="magic-frog" />
+      <a href="#" class="card__title">Лягушка волшебник</a>
+      <p class="price">20 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/strange-bat.png" width="100%" alt="strange-bat" />
+      <a href="#" class="card__title">Милая летучая мышь</a>
+      <p class="price">25 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/fly-agaric-special.png" width="100%" alt="fly-agaric-special" />
+      <a href="#" class="card__title">Мухомор специальный</a>
+      <p class="price">20 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/magic-grass.png" width="100%" alt="magic-grass" />
+      <a href="#" class="card__title">Загадочный мох</a>
+      <p class="price">15 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/zelie.png" width="90%" alt="magic-grass" />
+      <a href="#" class="card__title">Зелье любви</a>
+      <p class="price">БЕСЦЕННО</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/tigli.png" width="80%" alt="magic-grass" />
+      <a href="#" class="card__title">Тигель</a>
+      <p class="price">5 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/hat.png" width="100%" alt="magic-grass" />
+      <a href="#" class="card__title">Шапка мономаха</a>
+      <p class="price">50 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/zelie_2.png" width="90%" alt="magic-grass" />
+      <a href="#" class="card__title">Зелье счастья</a>
+      <p class="price">НЕ КУПИШЬ</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/mantia.png" width="50%" alt="magic-grass" />
+      <a href="#" class="card__title">Мантия ведьмы</a>
+      <p class="price">20 000 руб.</p>
+    </div>
+    <div class="card">
+      <img class="card__image" src="static/images/oboroten.png" width="90%" alt="magic-grass" />
+      <a href="#" class="card__title">Крыс [не] оборотень</a>
+      <p class="price">40 000 руб.</p>
+    </div>
+  </div>
+
+  <footer class="example-3">
+    <div class="container main-content-area">
+      <div class="holder" align="center">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="index.html">О сайте</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="holder" align="center">
+        <h3>Ассортимент</h3>
+        <ul>
+          <li><a href="#catlog-list">Каталог</a></li>
+          <li><a href="about_shop.html">О магазине</a></li>
+        </ul>
+      </div>
+      <div class="holder" align="center">
+        <h3>Условия обсуживания</h3>
+        <ul>
+          <li><a href="pay_and_delivery.html">Оплата и доставка</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright" align="center">
+      <p>Авторские права © 2023 Дарья Коваленко</p>
+    </div>
+  </footer>
+</body>
+
+</html>

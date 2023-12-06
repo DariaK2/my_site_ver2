@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оплата и доставка</title>
+  <link rel="stylesheet" href="static/styles/normalize.min.css" />
+  <link rel="stylesheet" href="static/styles/style.css" />
+</head>
+
+<body>
+  <header class="header" id="myHeader">
+    <a href="index.html" class="header__logo"><img src="static/images/bat-logo.png" width="115px" height="69px" /></a>
+    <input type="checkbox" id="menu-checkbox" />
+    <nav role="navigation">
+      <label for="menu-checkbox" class="toggle-button" data-open="Меню" data-close="Закрыть" onclick></label>
+      <ul class="main-menu">
+        <li class="header__item">
+          <a class="header__link" href="index.html">Главная</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="about_shop.html">О магазине</a>
+        </li>
+        <li class="header__item active">
+          <a class="header__link" href="pay_and_delivery.html">Оплата и доставка</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="https://www.team-azerty.com/images/news/577/les-paiments-fonctionnent-de-nouveau.jpg" target="_blank"><img
+      class="mem__image" src="static/images/mem-image.jpg" alt="mem-image" width="50%"></a>
+
+  <form id="pay_form" action="https://httpbin.org/post" method="post" target="_blank">
+    <div class="card-form">
+      <h2>Оформить заказ</h2>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Фамилия</label>
+            <input type="text" id="second_name" name="second_name" value="Ваша фамилия" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Имя</label>
+            <input type="text" id="first_name" name="first_name" value="Ваше имя" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="email" name="email" value="email@mail.com" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Телефон</label>
+            <input type="text" id="phone" name="phone" value="0(000)0000000" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Количество единиц товара</label>
+            <input type="number" id="amount" name="amount" value="0" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Дата возможной достави</label>
+            <input type="date" id="date_send" name="date_send" value="21.12.2023" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Личный код для курьера</label>
+            <input type="password" id="code" name="code" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Выберите предпочитаемый способ связи</label>
+
+            <div>
+              <input type="checkbox" id="checkbox_phone" name="checkbox_phone" />
+              <label for="checkbox_phone">Телефон</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="checkbox_mail" name="checkbox_mail" />
+              <label for="checkbox_mail">Email</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Хотите ли вы подписаться на наши новости</label>
+            <input type="radio" id="adv1" name="adv" value="advertisment-true" />
+            <label for="advertisment-true">Да</label>
+
+            <input type="radio" id="adv2" name="adv" value="advertisment-false" />
+            <label for="advertisment-false">Нет</label>
+          </div>
+        </div>
+      </div>
+
+      <input type="hidden" id="postId" name="postId" value="34657" />
+
+      <div class="row">
+        <div class="col">
+          <input type="submit" value="Отправить">
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <footer class="example-3">
+    <div class="container main-content-area">
+      <div class="holder" align="center">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="index.html">О сайте</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="holder" align="center">
+        <h3>Ассортимент</h3>
+        <ul>
+          <li><a href="contacts.html">Каталог</a></li>
+          <li><a href="about_shop.html">О магазине</a></li>
+        </ul>
+      </div>
+      <div class="holder" align="center">
+        <h3>Условия обсуживания</h3>
+        <ul>
+          <li><a href="#pay_form">Оплата и доставка</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright" align="center">
+      <p>Авторские права © 2023 Дарья Коваленко</p>
+    </div>
+  </footer>
+</body>
+
+</html>
